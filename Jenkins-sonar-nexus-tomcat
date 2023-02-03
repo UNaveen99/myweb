@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                git credentialsId: 'clone', url: 'https://github.com/nice2pandu/myweb.git'
+                git credentialsId: 'git cloning', url: 'https://github.com/nice2pandu/myweb.git'
             }
         }
         stage("Maven Build"){
